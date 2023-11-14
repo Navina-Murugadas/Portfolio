@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science Portfolio on Navina.M</title>
+    <link>https://navina-murugadas.github.io/Portfolio/</link>
+    <description>Recent content in Data Science Portfolio on Navina.M</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://navina-murugadas.github.io/Portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laptop Price Prediction</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-10/</link>
+      <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-10/</guid>
+      <description>In the domain of my &#34;Laptop Price Predictor&#34; initiative, I meticulously engineered a solution designed to empower both savvy consumers and astute retailers navigating the intricate dynamics of laptop pricing. Through a thorough curation and refinement process, I meticulously molded a diverse dataset sourced from reputable outlets, immersing myself in the intricacies of laptop specifications. These encompassed pivotal factors such as processor type, RAM size, storage capacity, screen size, and brand.</description>
+    </item>
+    <item>
+      <title>Google PlayStore Apps Analysis</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-11/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-11/</guid>
+      <description>In my endeavor titled &#34;Google PlayStore Apps Analysis with Tableau Dashboard,&#34; I embarked on a thorough exploration of the dynamic mobile app landscape. Armed with a diverse dataset extracted from the Google PlayStore, I conducted a meticulous data analysis, unearthing valuable insights into app trends, user preferences, and the intricacies influencing app ratings and downloads. Beyond traditional data visualizations using Python libraries, I elevated the project by crafting an interactive Tableau dashboard.</description>
+    </item>
+    <item>
+      <title>HR Analytics Dashboard</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-3/</link>
+      <pubDate>Mon, 02 Oct 2023 10:58:08 -0400</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-3/</guid>
+      <description>The HR Analytics Dashboard project was a pivotal endeavor in utilizing Tableau to construct a dynamic platform for comprehending essential human resources metrics. By amalgamating data from diverse HR sources, ranging from employee databases to recruitment records, the project focused on cleaning and preprocessing to ensure data accuracy. Through exploratory analysis and feature engineering, the dataset&#39;s nuances were uncovered, laying the foundation for a comprehensive dashboard. The final product was designed with user interaction in mind, featuring intuitive filters, drill-down options, and insightful tooltips.</description>
+    </item>
+    <item>
+      <title>Graduate Admissions Prediction</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-8/</link>
+      <pubDate>Sat, 23 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-8/</guid>
+      <description>In the realm of my project titled &#34;Graduate Admissions Prediction using Classification Technique,&#34; I embarked on the intricate task of constructing a predictive model that not only discerns the probability of graduate admission but also delves into the nuanced factors steering this crucial decision. Thorough data exploration and cleansing efforts paved the way for a meticulously curated dataset, featuring pivotal attributes such as GRE scores, TOEFL scores, and university ratings.</description>
+    </item>
+    <item>
+      <title>Movie Recommender System</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-7/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-7/</guid>
+      <description>In my &#34;Movie Recommender System using Cosine Similarity &amp; Content-Based Filtering&#34; project, I developed an intelligent recommendation system leveraging the power of cosine similarity and content-based filtering. By meticulously processing and extracting features, I created a robust model that not only understands the textual content and genres of movies but also adapts to individual user preferences through the integration of user ratings. The system utilizes advanced cosine similarity calculations to measure the likeness between movies, ultimately generating personalized recommendations that align with users&#39; unique tastes.</description>
+    </item>
+    <item>
+      <title>Customer Segmentation Analysis</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-16/</link>
+      <pubDate>Sat, 02 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-16/</guid>
+      <description>Embarking on the &#34;Customer Segmentation Analysis&#34; project represented a deep dive into the intricate tapestry of consumer behavior within a bustling mall environment. Leveraging advanced data science techniques, I orchestrated a meticulous exploration using Python, Pandas, NumPy, and Scikit-learn to unravel distinct customer segments through the powerful lens of KMeans clustering. The dataset, a rich amalgamation of customer attributes, underwent a transformative preprocessing phase, ensuring a robust foundation for meaningful segmentation.</description>
+    </item>
+    <item>
+      <title>Real Estate Price Prediction</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-9/</link>
+      <pubDate>Sun, 27 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-9/</guid>
+      <description>Within my &#34;Real Estate Price Prediction (Bangalore Homes)&#34; undertaking, I implemented a sophisticated ensemble strategy by amalgamating Linear Regression, Lasso Regression, and Decision Tree algorithms, bolstered by the precision of GridSearchCV for meticulous hyperparameter tuning. This holistic approach facilitated a nuanced exploration of the Bangalore real estate landscape, adept at capturing both linear and non-linear dynamics inherent in the dataset. A foundation of meticulous data cleaning and strategic feature engineering laid the groundwork for precise predictions.</description>
+    </item>
+    <item>
+      <title>Sales Analysis</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-15/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-15/</guid>
+      <description>Venturing into the realms of the &#34;Amazon Sales Analysis&#34; project marked my exploration into the intricacies of e-commerce dynamics, where I aimed to unravel the rich tapestry woven within Amazon&#39;s expansive sales data. Armed with Python and a toolkit comprising Pandas, NumPy, and Matplotlib, I meticulously navigated the complexities of data manipulation and analysis. The dataset, a treasure trove encompassing product sales, customer reviews, shipping details, and orders, underwent meticulous cleansing and preprocessing, laying a robust foundation for nuanced analysis.</description>
+    </item>
+    <item>
+      <title>Stock Prediction</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-12/</link>
+      <pubDate>Fri, 14 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-12/</guid>
+      <description>In my quest to decode the intricacies of financial markets, I embraced the challenge of the &#34;Tesla Stock Prediction&#34; project, aiming to provide a robust analytical tool for investors, traders, and financial analysts. This undertaking unfolded with a meticulous exploration of historical Tesla stock data, where I delved into daily stock prices, trading volumes, and relevant financial indicators. To fortify the predictive capabilities, I employed advanced data science techniques, including feature engineering that incorporated moving averages, trading volumes, and technical indicators, encapsulating the nuanced dynamics of market trends.</description>
+    </item>
+    <item>
+      <title>Email Spam Classifier</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-14/</link>
+      <pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-14/</guid>
+      <description>In undertaking the &#34;Email Spam Classifier&#34; project, I immersed myself in the intricate world of natural language processing and classification, striving to create a sophisticated solution for the ubiquitous challenge of email spam. Fueled by the imperative to bolster electronic communication security, this project unfolded as a nuanced exploration into the art of distinguishing between legitimate emails and spam. Leveraging Python, NLTK, and Scikit-learn, I meticulously processed the textual content of emails, employing techniques like tokenization and stemming to extract meaningful features.</description>
+    </item>
+    <item>
+      <title>Handwritten Digit Recognition</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-13/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-13/</guid>
+      <description>Embarking on the &#34;Handwritten Digit Recognition using MNIST Dataset&#34; project was a foray into the intricate landscape of computer vision, where I endeavored to create a cutting-edge solution for accurately identifying handwritten digits. This undertaking hinged on harnessing the power of deep learning, specifically Convolutional Neural Networks (CNNs), to decipher the rich patterns inherent in the MNIST dataset&#39;s 28x28 grayscale images. Beyond mere model implementation, I meticulously curated the dataset, ensuring its uniformity and suitability for robust training.</description>
+    </item>
+    <item>
+      <title>Netflix Analysis Dashboard</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-4/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-4/</guid>
+      <description>The &#34;Netflix Analysis Dashboard&#34; project represents a dynamic exploration of Netflix&#39;s vast dataset using Tableau, where I crafted an interactive and visually compelling dashboard. This project aimed to unravel key insights into user behavior and content trends within the platform. Leveraging Tableau&#39;s powerful visualization capabilities, I meticulously examined content distribution across genres, delved into user engagement metrics such as watch time and popular shows, and visualized geographical preferences. By amalgamating publicly available datasets, I ensured a robust foundation for data analysis.</description>
+    </item>
+    <item>
+      <title>Road Lane Line Detection</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-6/</link>
+      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-6/</guid>
+      <description>In my &#34;Road Lane Line Detection using OpenCV&#34; project, I developed a sophisticated computer vision system to enhance road safety by detecting and visualizing lane lines in real-time. Leveraging the power of OpenCV and Python, I implemented a multi-step process, including image processing, region of interest selection, and the Hough Transform, to robustly identify and extrapolate lane lines in images and videos. The system is not only capable of accurate lane detection but also seamlessly adapts to dynamic driving conditions.</description>
+    </item>
+    <item>
+      <title>Covid-19 Analysis Dashboard</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-5/</link>
+      <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-5/</guid>
+      <description>In response to the unprecedented challenges posed by the global Covid-19 pandemic, I spearheaded the creation of a dynamic and insightful &#34;Covid-19 Analysis Dashboard&#34; using Tableau. This project aimed to provide a comprehensive understanding of the virus&#39;s impact, offering users an interactive platform to explore and visualize key metrics such as total confirmed cases, recoveries, and fatalities on a global scale. Through the integration of real-time data from reliable sources and thoughtful visualization techniques, the dashboard facilitates an in-depth analysis of the pandemic&#39;s trends, allowing users to delve into country-specific data, identify hotspots, and track demographic variations.</description>
+    </item>
+    <item>
+      <title>Student Management System</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-1/</link>
+      <pubDate>Sat, 15 Apr 2023 10:58:08 -0400</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-1/</guid>
+      <description>The Student Management System is a robust Python-based application designed for efficient management of student information within educational institutions. Leveraging the power of MySQL for database management, the system allows users to seamlessly perform essential CRUD operations, enabling the addition, retrieval, update, and deletion of student records. The Python-MySQL connection forms the backbone, ensuring smooth interaction between the program and the database. With features like a search functionality, data validation, and logging, the system prioritizes user-friendliness and data integrity.</description>
+    </item>
+    <item>
+      <title>Snake Game</title>
+      <link>https://navina-murugadas.github.io/Portfolio/post/chapter-2/</link>
+      <pubDate>Thu, 30 Mar 2023 10:58:08 -0400</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/post/chapter-2/</guid>
+      <description>The Snake Game in Python is an engaging project that brings the classic arcade experience to life through code. In this project, a responsive and maneuverable snake is implemented, allowing users to control its direction using arrow keys. The game introduces a dynamic food generation system, with the snake growing longer upon each successful consumption. Collision detection is a key feature, ensuring the game responds appropriately when the snake either devours its prey or collides with itself or the screen edges.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://navina-murugadas.github.io/Portfolio/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/about/</guid>
+      <description>Hey there! I&#39;m Navina M, and I&#39;m all about the magic of Data Science and Analytics. I&#39;ve been on a wild ride, jumping into different internships and soaking up every bit of knowledge along the way. From playing with data on various projects, I&#39;ve discovered this awesome world where numbers come to life. Whether it&#39;s predicting the future, digging into stats, or creating cool data visualizations, I&#39;m all in! Join me on this data adventure, where we turn raw info into some seriously cool stories.</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://navina-murugadas.github.io/Portfolio/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://navina-murugadas.github.io/Portfolio/contact/</guid>
+      <description>Feel free to follow me on these social media platforms and reach out via email.
+Platform URL LinkedIn: https://www.linkedin.com/in/navina-murugadas2000 GitHub: https://github.com/Navina-Murugadas Email: murukavikabhinavi@gmail.com </description>
+    </item>
+  </channel>
+</rss>
