@@ -215,7 +215,6 @@ body {
 
     .container-2 {
         width: 100%; /* Adjust the container width */
-        margin-bottom: 40px; /* Add spacing between sections */
         margin-top: 20px; /* Reduce the gap between container-1 and container-2 */
         padding-left: 0; /* Ensure both containers align the same */
     }
@@ -242,7 +241,6 @@ body {
 
     .container-2 {
         width: 100%; /* Adjust the container width */
-        margin-bottom: 80px; /* Add spacing between sections */
         margin-top: 20px; /* Slightly reduce the gap between containers */
     }
 
