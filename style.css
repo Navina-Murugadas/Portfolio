@@ -208,6 +208,7 @@ body {
 
     .container-1 {
         width: 100%; /* Adjust the container width */
+        height: 100%;
         text-align: center; /* Keep text left-aligned on tablets */
         padding-left: 0; /* Remove left padding for better centering */
         padding-top: 80px; /* Adjust top padding */
@@ -215,6 +216,7 @@ body {
 
     .container-2 {
         width: 100%; /* Adjust the container width */
+        height: 100%;
         margin-top: 20px; /* Reduce the gap between container-1 and container-2 */
         padding-left: 0; /* Ensure both containers align the same */
     }
@@ -234,14 +236,18 @@ body {
 
     .container-1 {
         width: 100%; /* Adjust the container width */
+        height: 100%;
         text-align: center; /* Center the text */
         padding-left: 0; /* Remove extra padding */
         padding-top: 80px; /* Adjust top padding */
+        height: auto;
     }
 
     .container-2 {
         width: 100%; /* Adjust the container width */
+        height: 100%;
         margin-top: 20px; /* Slightly reduce the gap between containers */
+        height: auto;
     }
 
     .typewriter h1 {
@@ -265,10 +271,12 @@ body {
 
     .container-1 p {
         font-size: 22px; /* Adjust the size of the "Hello" text */
+        height: 100%;
     }
 
     .typewriter p {
         font-size: 16px; /* Adjust the font size to make it smaller */
+        height: 100%;
     }
 }
 
