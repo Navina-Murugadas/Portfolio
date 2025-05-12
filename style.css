@@ -255,12 +255,15 @@ body {
     }
 
     .container-1 p {
-        margin-top: 20px;
         font-size: 24px; /* Adjust the size of the "Hello" text */
     }
 
     .typewriter p {
         font-size: 18px; /* Adjust the font size to make it smaller */
+    }
+
+    .container-1 img.profile-photo {
+        margin-bottom: 40px;
     }
 }
 
@@ -278,6 +281,10 @@ body {
     .typewriter p {
         font-size: 16px; /* Adjust the font size to make it smaller */
         height: 100%;
+    }
+
+    .container-1 img.profile-photo {
+        margin-bottom: 40px;
     }
 }
 
