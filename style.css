@@ -31,7 +31,7 @@ body {
 }
 
 .logo {
-    width: 130px;
+    width: 120px;
 }
 
 .container {
@@ -44,7 +44,7 @@ body {
     justify-content: space-between;
     height: auto;
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 /* Default styles for large screens (desktops/laptops) */
@@ -208,7 +208,7 @@ body {
 
     .container-1 {
         width: 100%; /* Adjust the container width */
-        height: 100%;
+        height: auto;
         text-align: center; /* Keep text left-aligned on tablets */
         padding-left: 0; /* Remove left padding for better centering */
         padding-top: 80px; /* Adjust top padding */
@@ -216,8 +216,8 @@ body {
 
     .container-2 {
         width: 100%; /* Adjust the container width */
-        height: 100%;
-        margin-top: 20px; /* Reduce the gap between container-1 and container-2 */
+        height: auto;
+        margin-top: 30px; /* Reduce the gap between container-1 and container-2 */
         padding-left: 0; /* Ensure both containers align the same */
     }
 
@@ -236,7 +236,7 @@ body {
 
     .container-1 {
         width: 100%; /* Adjust the container width */
-        height: 100%;
+        height: auto;
         text-align: center; /* Center the text */
         padding-left: 0; /* Remove extra padding */
         padding-top: 100px; /* Adjust top padding */
@@ -245,8 +245,8 @@ body {
 
     .container-2 {
         width: 100%; /* Adjust the container width */
-        height: 100%;
-        margin-top: 20px; /* Slightly reduce the gap between containers */
+        height: auto;
+        margin-top: 35px; /* Slightly reduce the gap between containers */
         height: auto;
     }
 
