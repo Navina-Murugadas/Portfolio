@@ -255,6 +255,7 @@ body {
     }
 
     .container-1 p {
+        margin-top: 20px;
         font-size: 24px; /* Adjust the size of the "Hello" text */
     }
 
