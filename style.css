@@ -299,7 +299,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px; /* optional adjustment */
+    margin-top: 80px; /* optional adjustment */
+    margin-bottom: 30px
     gap: 10px;
   }
 
