@@ -308,8 +308,8 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 80px; /* optional adjustment */
-    margin-bottom: 30px
-    gap: 10px;
+    margin-bottom: 60px
+    gap: 20px;
   }
 
   .dot-loading span {
