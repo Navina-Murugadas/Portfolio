@@ -263,7 +263,7 @@ body {
     }
 
     .container-1 img.profile-photo {
-        margin-bottom: 70px;
+        padding-bottom: 70px;
     }
 }
 
@@ -284,7 +284,7 @@ body {
     }
 
     .container-1 img.profile-photo {
-        margin-bottom: 70px;
+        padding-bottom: 70px;
     }
 }
 
@@ -407,7 +407,7 @@ nav .fa-xmark{
 /****************************************************************************************************/
 @media only screen and (max-width: 1220px) {
     nav {
-    padding-top: 15px;
+    padding-top: 20px;
     }
     
     nav .fa-bars {
