@@ -83,9 +83,9 @@ body {
 
 .quote {
     color: #ff004f;
-    font-family: 'Fantasy', serif;
+    font-family: cursive;
     font-style: italic;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 100;
     line-height: 1.6;
     text-align: center;
@@ -1187,73 +1187,156 @@ main.row {
     animation: fadeInSlideIn 0.5s ease forwards;
 }
 
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
+.work-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     margin-top: 50px;
 }
 
-.work{
+.work {
+    position: relative; 
+    height: auto;
+    display: flex;
+    flex-direction: row;
     border-radius: 10px;
-    position: relative;
     overflow: hidden;
-    animation: fadeInSlideIn 0.5s ease forwards;
+    width: 100%;
 }
 
-.work img{
-    width: 100%;
-    border-radius: 10px;
+.work img {
+    flex: 1 1 45%;
+    max-width: 45%;
+    object-fit: contain;
+    object-position: center;
     display: block;
+    padding: 5px;
+    background: #f3ebeb;
     transition: transform 0.5s;
 }
 
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
-    border-radius: 10px;
+.work::after {
+    content: "";
     position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255, 0, 79, 0.2); /* lighter tint */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.work:hover::after {
+    opacity: 1;
+}
+
+.layer {
+    flex: 1 1 55%;
+    max-width: 55%;
+    padding: 30px 40px 70px; /* extra bottom padding for button space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* keep text at top */
+    background: #f3ebeb;
+    position: relative; /* needed for absolute button */
+    z-index: 0;
+}
+
+.layer h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #ff004f;
+}
+
+/* Tagline under project title */
+.layer .tagline {
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    text-align: center;   /* center tagline under heading */
+}
+
+.layer p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify ;
+}
+
+/* Normal dashboard text link */
+.dashboard-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ff004f;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.dashboard-link:hover {
+    text-decoration: solid;
+    color:  #cc0044;   
+    background: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    font-weight: bold;
+}
+
+
+/* GitHub icon link ONLY (circle bubble) */
+.layer .icon-link {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background: #fff;
+    color: #ff004f;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
-    animation: fadeInSlideIn 0.5s ease forwards;
-}
-
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;    
-    animation: fadeInSlideIn 0.5s ease forwards;
-}
-
-.layer a{
-    margin-top: 20px;
-    color: #ff004f;
-    text-decoration: none;
     font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
+    text-decoration: none;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+.work:hover .layer .icon-link {
+    opacity: 1;
+    transform: scale(1);
+}
+.layer .icon-link:hover {
+    background: #ff3366;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(255, 0, 79, 0.6);
+}
+
+/* Ripple effect */
+.layer a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 50%;
-    text-align: center;
-    animation: fadeInSlideIn 0.5s ease forwards;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
 }
 
-.work:hover img{
-    transform: scale(1.1);
-}
-
-.work:hover .layer{
-    height: 100%;
+.layer a:active::after {
+    transform: scale(2.5);
+    opacity: 0;
+    transition: 0s; /* reset instantly */
 }
 
 .btn{
@@ -1273,43 +1356,78 @@ main.row {
     background: #ff004f;
 }
 
-@media (max-width: 1290px) {
-    .work-list {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+/* Responsive */
+@media (max-width: 900px) {
+    .work {
+        flex-direction: column;
     }
-}
-
-@media (min-width: 801px) and (max-width: 900px) {
-    .layer p {
-        font-size: smaller;
+    .work img {
+        height: 250px;
     }
-}
-
-@media (min-width: 751px) and (max-width: 800px) {
-    .layer p {
-        font-size: x-small;
-    }
-}
-
-@media (max-width: 750px) {
-    .work-list {
-        grid-template-columns: 1fr; /* 1 column for small screens */
-    }
-
+    .work img,
     .layer {
-        padding: 0 20px; /* Adjust padding for smaller screens */
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    .layer {
+        padding: 20px 20px 70px; /* keep space for button */
     }
 
-    .layer a {
-        width: 50px; /* Smaller button size */
-        height: 50px;
-        font-size: 16px; /* Smaller font size */
+    /* Center the hover GitHub icon inside the .work container */
+    .layer .icon-link {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        transform: none;
+        z-index: 10;
     }
 
-    .btn {
-        padding: 10px 30px; /* Adjust button padding for smaller screens */
+    /* Keep dashboard link inline */
+    .dashboard-link {
+        position: relative;
+        display: inline-block;
+        margin-top: 12px;
     }
 }
+
+@media (max-width: 400px) {
+    .layer .tagline {
+    font-size: 12px;
+    margin-top: 10px;
+    }
+
+    /* Shrink GitHub icon bubble */
+    .layer .icon-link {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    /* Dashboard text link */
+    .dashboard-link {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+    /* Title and description text */
+    .layer h3 {
+        font-size: 16px;   /* was 20px+ before */
+        margin-bottom: 6px;
+    }
+
+    .layer p {
+        font-size: 13px;   /* was 15–16px */
+        line-height: 1.4;  /* tighter spacing */
+    }
+
+    /* Reduce padding inside overlay */
+    .layer {
+        padding: 12px 12px 55px;
+    }
+}
+
 
 /* ----------------------------Certifications & Badges------------------------------------------*/
 #certifications {
