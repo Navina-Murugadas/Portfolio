@@ -481,7 +481,7 @@
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 2; // The scroll speed
+        const walk = (x - startX) * 4; // The scroll speed
         slider.scrollLeft = scrollLeft - walk;
     });
 </script>
