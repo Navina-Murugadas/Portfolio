@@ -3149,6 +3149,45 @@ main.row {
     }
 }
 
+/* Keep container-2 social icons on a single row for smaller screens */
+@media only screen and (max-width: 1000px) {
+    .header-content .container-2 .social-icons {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap; /* prevent wrapping */
+        overflow-x: auto; /* allow horizontal scroll if needed */
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 6px; /* small breathing room for scroll */
+    }
+
+    .header-content .container-2 .social-icons a {
+        flex: 0 0 auto; /* don't stretch */
+        margin-right: 6px;
+    }
+
+    /* slightly reduce icon size so they fit on narrow viewports */
+    .header-content .container-2 .social-icons a i,
+    .header-content .container-2 .social-icons a svg {
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+    }
+}
+
+/* On very small screens keep icons compact and avoid large overflow */
+@media only screen and (max-width: 480px) {
+    .header-content .container-2 .social-icons a i,
+    .header-content .container-2 .social-icons a svg {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+}
+
 /* Button styles */
 .btn.btn2 {
     display: inline-block;
@@ -4488,4 +4527,5 @@ form .btn2:hover::before {
         font-size: 12px;
     }
 }
+
 /* ==================================== END TIMELINE SECTION ==================================== */
