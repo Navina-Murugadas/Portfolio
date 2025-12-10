@@ -118,6 +118,92 @@ body {
     text-align: center;
 }
 
+/* Learning Platforms Section */
+.learning-platforms {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.platform-item {
+    background: linear-gradient(135deg, rgba(255, 0, 79, 0.1), rgba(255, 0, 79, 0.05));
+    border: 2px solid #ff004f;
+    border-radius: 12px;
+    padding: 16px 20px;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 0;
+    max-width: 320px;
+}
+
+.platform-item a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.platform-item i {
+    font-size: 32px;
+    color: #ff004f;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.platform-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.platform-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+
+.platform-desc {
+    font-size: 13px;
+    color: #ababab;
+    margin-top: 4px;
+    display: block;
+    line-height: 1.3;
+}
+
+.platform-id {
+    font-size: 12px;
+    color: #ff004f;
+    font-weight: 600;
+    margin-top: 6px;
+    display: block;
+}
+
+.platform-item:hover {
+    background: linear-gradient(135deg, rgba(255, 0, 79, 0.2), rgba(255, 0, 79, 0.1));
+    border-color: #ff3366;
+    box-shadow: 0 8px 20px rgba(255, 0, 79, 0.25);
+    transform: translateY(-4px);
+}
+
+.platform-item:hover i {
+    transform: scale(1.15) rotate(5deg);
+    color: #ff3366;
+}
+
+.instagram-item {
+    animation: slideInLeft 0.9s cubic-bezier(.34,1.56,.64,1) 0.85s both;
+}
+
+.threads-item {
+    animation: slideInRight 0.9s cubic-bezier(.34,1.56,.64,1) 0.9s both;
+}
+
 .about-col {
     transform: scale(0.5); /* Start smaller */
     animation: scaleUp 2s ease forwards; /* Scale-up animation */
@@ -196,6 +282,23 @@ body {
     }
 }
 
+/* For screens 1220px and above - reduce gap and center image */
+@media only screen and (min-width: 1221px) {
+    .header-content {
+        gap: 40px; /* reduced gap between image and text */
+    }
+
+    .container-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-frame {
+        margin: 0 auto;
+    }
+}
+
 .header-content {
     display: flex;
     justify-content: flex-start;
@@ -208,8 +311,8 @@ body {
 
 
 .container-1 {
-    flex: 0 0 42%;
-    max-width: 42%;
+    flex: 0 0 45%;
+    max-width: 45%;
     overflow: visible;
     display: flex;
     align-items: center;
@@ -233,7 +336,7 @@ body {
 
 .container-1 img.profile-photo {
     width: 100%;
-    height: min(62vh, 500px); /* flexible: scales with viewport, capped at 500px max */
+    height: min(70vh, 550px); /* increased height to match container-2 content height */
     object-fit: contain; /* show full image without cropping */
     object-position: center;
     display: block;
@@ -551,6 +654,42 @@ body {
     .container-1 p {
         font-size: 24px;
     }
+
+    .learning-platforms {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .platform-item {
+        min-width: unset;
+        width: 100%;
+        padding: 14px 16px;
+        max-width: unset;
+    }
+
+    .platform-item a {
+        gap: 12px;
+    }
+
+    .platform-item i {
+        font-size: 28px;
+    }
+
+    .platform-title {
+        font-size: 15px;
+    }
+
+    .platform-desc {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+
+    .platform-id {
+        font-size: 11px;
+        margin-top: 5px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -577,6 +716,37 @@ body {
     
     .container-2 {
         max-width: 100%;
+    }
+
+    .learning-platforms {
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 18px;
+        margin-bottom: 22px;
+    }
+
+    .platform-item {
+        padding: 13px 14px;
+    }
+
+    .platform-item a {
+        gap: 11px;
+    }
+
+    .platform-item i {
+        font-size: 26px;
+    }
+
+    .platform-title {
+        font-size: 14px;
+    }
+
+    .platform-desc {
+        font-size: 11px;
+    }
+
+    .platform-id {
+        font-size: 10px;
     }
 }
 
