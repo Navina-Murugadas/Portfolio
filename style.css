@@ -125,8 +125,14 @@ body {
     margin-top: 25px;
     margin-bottom: 30px;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: stretch;
+}
+
+@media only screen and (max-width: 1220px) {
+    .learning-platforms {
+        justify-content: center;
+    }
 }
 
 .platform-item {
@@ -259,6 +265,17 @@ body {
     color: #fff;
     margin-top: 10px;
     animation: slideInUp 0.45s ease-out 0.15s forwards;
+    opacity: 0;
+}
+
+.role-descriptor {
+    font-size: 14px;
+    color: #ff004f;
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    animation: slideInUp 0.45s ease-out 0.2s forwards;
     opacity: 0;
 }
 
@@ -1087,9 +1104,22 @@ nav .fa-xmark{
     transition: color 0.22s ease;
 }
 
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1220px) {
+    .cta-buttons {
+        justify-content: center;
+    }
+}
+
 .cta-button {
     display: inline-block;
-    margin-top: 20px;
     padding: 12px 30px;
     background: linear-gradient(135deg, #ff004f, #ff3366);
     color: #fff;
