@@ -2800,9 +2800,12 @@ main.row {
     box-shadow: 0 15px 40px rgba(255, 0, 79, 0.4);
 }
 
-.work img {
+.work img,
+.work iframe {
     flex: 1 1 45%;
     max-width: 45%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     object-fit: contain;
     object-position: center;
     display: block;
@@ -2811,7 +2814,16 @@ main.row {
     padding-top: 2px;
     padding-bottom: 2px;
     background: #f3ebeb;
+    border: 0;
     transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Ensure iframe fills the full width of its flex container on wide screens */
+@media (min-width: 1281px) {
+    .work iframe {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .work::after {
@@ -2824,6 +2836,40 @@ main.row {
     transition: opacity 0.3s ease;
     z-index: 1;
     pointer-events: none;
+}
+
+/* Make portfolio cards responsive: stack on narrower screens */
+@media (max-width: 1280px) {
+    .work {
+        flex-direction: column;
+        min-height: 540px; /* ensure enough room for both sections */
+    }
+    .work img,
+    .work iframe {
+        flex: 0 0 40%;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        padding: 15px 0 0 0; /* only top padding below 1280px */
+    }
+    .layer {
+        flex: 0 0 60%;
+        max-width: 100%;
+    }
+}
+
+/* Smaller screens: allow natural height and adjust spacing */
+@media (max-width: 900px) {
+    .work {
+        min-height: auto;
+    }
+    .work img,
+    .work iframe {
+        flex: 1 1 100%;
+    }
+    .layer {
+        flex: 1 1 100%;
+    }
 }
 
 .work:hover::after {
@@ -2840,6 +2886,15 @@ main.row {
     background: #f3ebeb;
     position: relative; /* needed for absolute button */
     z-index: 0;
+}
+
+/* Ensure layer spans full width when card stacks below 1280px */
+@media (max-width: 1280px) {
+    .layer {
+        flex: 0 0 60% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
 }
 
 .layer h3 {
