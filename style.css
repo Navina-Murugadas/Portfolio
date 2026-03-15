@@ -1165,9 +1165,22 @@ nav .fa-xmark{
 
 .about-content {
     display: grid;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Row 3/4 layout: About text + side credibility cards */
+.about-main {
+    display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 60px;
     align-items: start;
+}
+
+/* Centered footer with CTA and quote */
+.about-footer {
+    text-align: center;
+    margin-top: 40px;
 }
 
 /* Prevent overflow inside grid children by allowing them to shrink */
@@ -1209,6 +1222,99 @@ nav .fa-xmark{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.about-highlight{
+    padding: 20px;
+    background: rgba(255, 0, 79, 0.08);
+    border-left: 4px solid #ff3366;
+    border-radius: 8px;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    font-size: 18px;
+}
+
+.impact-metrics{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin:40px 0;
+}
+
+.metric{
+    background:#0d0d0d;
+    padding:25px;
+    border-radius:8px;
+    border:1px solid rgba(255,255,255,0.05);
+    transition:0.3s;
+}
+
+.metric:hover{
+    transform:translateY(-5px);
+    border-color:#ff2d75;
+}
+
+/* Hover glow + accent animation (matches certificate cards) */
+.impact-metrics .metric {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                border-color 0.4s ease;
+}
+
+.impact-metrics .metric::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 0, 79, 0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.impact-metrics .metric::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 0, 79, 0.2), transparent);
+    transition: left 0.6s ease;
+    pointer-events: none;
+}
+
+.impact-metrics .metric:hover::before {
+    opacity: 1;
+}
+
+.impact-metrics .metric:hover::after {
+    left: 100%;
+}
+
+.impact-metrics .metric:hover {
+    box-shadow: 0 10px 25px rgba(255, 0, 79, 0.45), inset 0 0 18px rgba(255, 0, 79, 0.08);
+    transform: translateY(-7px) scale(1.02);
+    border-color: rgba(255, 0, 79, 0.7);
+    background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+}
+
+.metric h3{
+    font-size:32px;
+    margin-bottom:10px;
+    color:#ff2d75;
+    font-weight:700;
+}
+
+.metric p{
+    font-size:14px;
+    color:#d1d1d1;
+    line-height:1.5;
+}
+
 .about-cta {
     color: #ff3366;
     font-size: 17px !important;
@@ -1216,7 +1322,7 @@ nav .fa-xmark{
     font-weight: 600;
 }
 
-.about-text .quote {
+.about-footer .quote {
     margin-top: 30px;
     padding: 20px;
     background: rgba(255, 0, 79, 0.08);
@@ -1377,6 +1483,10 @@ nav .fa-xmark{
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
+    .about-main {
+        grid-template-columns: 1fr;
+    }
     
     .about-stats {
         grid-template-columns: 2fr 2fr;
@@ -1388,6 +1498,10 @@ nav .fa-xmark{
     .about-content {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+
+    .about-main {
+        grid-template-columns: 1fr;
     }
     
     .about-stats {
