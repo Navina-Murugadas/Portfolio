@@ -269,14 +269,56 @@ body {
 }
 
 .role-descriptor {
-    font-size: 14px;
-    color: #ff004f;
-    margin-top: 6px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.72);
+    margin-top: 10px;
     margin-bottom: 0;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    line-height: 1.4;
+    text-transform: none;
     animation: slideInUp 0.45s ease-out 0.2s forwards;
-    opacity: 0;
+    opacity: 1;
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: keep-all;
+}
+
+@media only screen and (min-width: 771px) {
+    .role-descriptor {
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 851px) {
+    .role-descriptor {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 771px) {
+    .role-descriptor {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .role-descriptor {
+        white-space: normal;
+        font-size: 12px;
+    }
+}
+
+.header-content .container-2 .typewriter .certification-badge {
+    font-size: 16px;
+    color: rgba(255,255,255,0.72);
+    margin-top: 6px;
+    margin-bottom: 14px;
+    font-weight: 300;
+    letter-spacing: 0.35px;
+    line-height: 1.4;
+    animation: slideInUp 0.45s ease-out 0.25s forwards;
+    opacity: 1;
 }
 
 @keyframes colorPulse {
@@ -357,6 +399,25 @@ body {
     .image-frame {
         margin: 0 auto;
     }
+
+    .header-content .container-2 .typewriter .tagline {
+        justify-content: flex-start;
+        text-align: left;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1221px) {
+    .tagline {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1221px) {
+    .tagline {
+        font-size: 14px;
+    }
 }
 
 .header-content {
@@ -420,8 +481,13 @@ body {
     line-height: 1.6; /* base line-height for better readability */
 }
 
-.header-content .container-2 p {
+.header-content .container-2 p:not(.certification-badge) {
     color: #d0d0d0;
+}
+
+.header-content .container-2 .typewriter > p:not(.certification-badge) {
+    color: #fff;
+    font-weight: 700;
 }
 
 /* Staggered entrance for text elements */
@@ -1174,7 +1240,7 @@ nav .fa-xmark{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 60px;
-    align-items: start;
+    align-items: stretch;
 }
 
 /* Centered footer with CTA and quote */
@@ -1262,13 +1328,14 @@ nav .fa-xmark{
     }
 
     .about-highlight span {
-        display: inline-flex;
+        display: flex;
         flex: 1 1 100%;
         min-width: 0;
         white-space: normal;
         word-break: break-word;
         padding: 6px 10px;
         margin: 3px 0;
+        text-align: left;
     }
 
     .about-highlight span::before {
@@ -1313,8 +1380,9 @@ nav .fa-xmark{
         box-sizing: border-box;
         white-space: normal;
         word-break: break-word;
-        padding: 6px 0;
+        padding: 6px 0 6px 20px;
         margin: 0;
+        text-align: left;
     }
 }
 
@@ -1345,8 +1413,8 @@ nav .fa-xmark{
 .impact-metrics{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:24px;
-    margin:40px 0;
+    gap:32px;
+    margin:48px 0;
     width: 100%;
     box-sizing: border-box;
 }
@@ -1354,8 +1422,8 @@ nav .fa-xmark{
 @media only screen and (max-width: 520px) {
     .impact-metrics {
         grid-template-columns: 1fr;
-        gap: 18px;
-        margin: 30px 0;
+        gap: 24px;
+        margin: 32px 0;
     }
 
     .impact-metrics .metric {
@@ -1367,9 +1435,9 @@ nav .fa-xmark{
 @media only screen and (min-width: 1100px) {
     .impact-metrics {
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 30px;
+        gap: 40px;
         max-width: 1200px;
-        margin: 40px auto;
+        margin: 48px auto;
     }
 }
 
@@ -1488,7 +1556,7 @@ nav .fa-xmark{
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -1533,7 +1601,35 @@ nav .fa-xmark{
     color: #bfbfbf;
     margin: 0;
     transition: color 0.4s ease;
-    text-align: center;
+    text-align: left;
+}
+
+.stat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stat-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 4px;
+    line-height: 1.4;
+    color: #d1d1d1;
+}
+
+.stat-list li:last-child {
+    margin-bottom: 0;
+}
+
+.stat-list li::before {
+    content: '•';
+    position: absolute;
+    top: 0.35em;
+    left: 0;
+    color: #ff004f;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 /* Highlight the key achievement text to match the theme */
@@ -1559,6 +1655,30 @@ nav .fa-xmark{
 
 .stat-card:hover .stat-desc strong {
     color: #000;
+}
+
+@media only screen and (max-width: 1270px) {
+    .stat-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .stat-left,
+    .stat-right {
+        width: 100%;
+    }
+
+    .stat-desc .stat-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 16px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .stat-desc .stat-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Floating animation keyframes for numbers */
@@ -1645,7 +1765,7 @@ nav .fa-xmark{
     .stat-card {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         padding: 18px;
         gap: 12px;
         text-align: left;
@@ -1662,8 +1782,8 @@ nav .fa-xmark{
     .stat-right {
         width: 66%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
         min-height: 80px;
     }
     
@@ -1677,7 +1797,7 @@ nav .fa-xmark{
     
     .stat-desc {
         font-size: 13px;
-        text-align: center;
+        text-align: left;
         line-height: 1.4;
     }
     
@@ -1690,25 +1810,25 @@ nav .fa-xmark{
     .stat-card {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         padding: 16px;
         gap: 8px;
-        text-align: center;
+        text-align: left;
     }
     
     .stat-left {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 4px;
     }
     
     .stat-right {
         width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
         min-height: 60px;
     }
     
@@ -1722,8 +1842,18 @@ nav .fa-xmark{
     
     .stat-desc {
         font-size: 12px;
-        text-align: center;
+        text-align: left;
         line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .stat-desc {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+    .stat-list li {
+        margin-bottom: 3px;
     }
 }
 
@@ -1845,7 +1975,7 @@ nav .fa-xmark{
 .skill-item {
     background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
     color: #fff;
-    padding: 25px 20px;
+    padding: 8px 10px;
     border-radius: 15px;
     text-align: center;
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -1854,30 +1984,34 @@ nav .fa-xmark{
     position: relative;
     border: 2px solid rgba(255, 0, 79, 0.2);
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .skill-item::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(255, 0, 79, 0.3), transparent);
-    opacity: 0;
-    transition: opacity 0.4s ease;
+    background: linear-gradient(90deg, transparent, rgba(255, 0, 79, 0.2), transparent);
+    opacity: 1;
+    transition: left 0.6s ease;
     pointer-events: none;
     border-radius: 15px;
 }
 
 .skill-item:hover::before {
-    opacity: 1;
+    left: 100%;
 }
 
 .skill-item:hover {
-    transform: translateY(-12px) scale(1.05);
-    background: linear-gradient(135deg, #ff004f, #ff3366);
-    box-shadow: 0 15px 40px rgba(255, 0, 79, 0.8), 0 0 20px rgba(255, 0, 79, 0.6);
+    transform: translateY(-15px) scale(1.05);
+    background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+    box-shadow: 0 20px 50px rgba(255, 0, 79, 0.8), inset 0 0 30px rgba(255, 0, 79, 0.1);
     border-color: rgba(255, 0, 79, 0.8);
 }
 
@@ -1912,7 +2046,7 @@ nav .fa-xmark{
 .skill-item h3 {
     color: #fff;
     font-weight: bold;
-    margin: 0;
+    margin: -3px 0 8px 0;
     font-size: 15px;
 }
 
@@ -1924,8 +2058,10 @@ nav .fa-xmark{
 }
 
 .skill-item img {
-    max-width: 70px;
-    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 2px;
 }
 
 /* Animation delays for skills */
@@ -1964,12 +2100,12 @@ nav .fa-xmark{
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 10px;
 }
 
 .tools-list li {
     background: linear-gradient(90deg, rgba(255, 0, 79, 0.05), transparent);
-    padding: 12px 15px;
+    padding: 8px 12px;
     border-radius: 10px;
     border-left: 3px solid rgba(255, 0, 79, 0.4);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -1977,14 +2113,16 @@ nav .fa-xmark{
     font-weight: 500;
     color: #fff;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    min-height: 68px;
 }
 
 .tools-list li img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    margin-top: 4px;
     transition: all 0.4s ease;
 }
 
@@ -2357,7 +2495,8 @@ nav .fa-xmark{
     }
 
     .skill-item img {
-        max-width: 50px; /* Reduce image size further */
+        width: 85px;
+        height: 85px;
     }
 
     .tools-list {
@@ -2396,12 +2535,22 @@ nav .fa-xmark{
     .skill-container {
         grid-template-columns: 1fr; /* 1 item per row */
     }
+
+    .skill-item img {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 /* For screens between 400px and 600px */
 @media only screen and (min-width: 390px) and (max-width: 600px) {
     .skill-container {
         grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+
+    .skill-item img {
+        width: 85px;
+        height: 85px;
     }
 }
 
@@ -2410,12 +2559,22 @@ nav .fa-xmark{
     .skill-container {
         grid-template-columns: repeat(3, 1fr); /* 3 items per row */
     }
+
+    .skill-item img {
+        width: 95px;
+        height: 95px;
+    }
 }
 
 /* For screens between 850px and 1100px */
 @media only screen and (min-width: 850px) and (max-width: 1100px) {
     .skill-container {
         grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    }
+
+    .skill-item img {
+        width: 100px;
+        height: 100px;
     }
 }
 
